@@ -5,7 +5,7 @@ draft = false
 description = "this is my first post"
 image = "/images/blog.webp"
 imageBig = ""
-categories = []
+categories = ["blog", "webdev", "python"]
 authors = ["Apetrei Florin Sebastian"]
 avatar = "/images/avatar.webp"
 +++
