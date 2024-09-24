@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on My New Hugo Site</title>
+    <link>https://example.org/authors/</link>
+    <description>Recent content in Authors on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Sep 2024 20:29:11 +0200</lastBuildDate><atom:link href="https://example.org/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apetrei Florin Sebastian</title>
+      <link>https://example.org/authors/apetrei-florin-sebastian/</link>
+      <pubDate>Mon, 23 Sep 2024 20:29:11 +0200</pubDate>
+      
+      <guid>https://example.org/authors/apetrei-florin-sebastian/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
