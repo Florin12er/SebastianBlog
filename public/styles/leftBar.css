@@ -1,0 +1,74 @@
+.left-bar-hr {
+  display: none;
+}
+
+.left-bar-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.left-bar {
+  position: sticky;
+  top: 150px;
+}
+
+.left-bar-social {
+  display: flex;
+  gap: 20px;
+}
+
+.left-bar-social svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.copy-button {
+  background-color: var(--bgSoft);
+  border: none;
+  color: var(--text);
+  padding: 6px;
+  cursor: pointer;
+  transition: all var(--animation-speed) var(--animation-curve);
+}
+
+.copy-button:hover {
+  transform: scale(var(--grow-scale));
+}
+
+.copy-button.copied {
+  background-color: #16a34a;
+  color: var(--text);
+}
+
+.share-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.share-button::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bgSoft);
+  color: var(--text);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+.share-button:hover::after,
+.copy-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+

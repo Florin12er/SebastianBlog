@@ -35,20 +35,59 @@
     </div>
   </div>
 </div>
+<script>
+const mode = localStorage.getItem("color-mode") || "light";
+const giscusTheme = mode === "light" ? "light" : "dark";
 
-<script src="https://giscus.app/client.js"
-        data-repo="Florin12er/SebastianBlog"
-        data-repo-id="R_kgDOM16hhA"
-        data-category="General"
-        data-category-id="DIC_kwDOM16hhM4CiwEG"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="https://giscus.app/themes/custom_example.css"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+function loadGiscus() {
+  const script = document.createElement("script");
+  script.src = "https://giscus.app/client.js";
+  script.setAttribute("data-repo", "Florin12er/SebastianBlog");
+  script.setAttribute("data-repo-id", "R_kgDOM16hhA");
+  script.setAttribute("data-category", "General");
+  script.setAttribute("data-category-id", "DIC_kwDOM16hhM4CiwEG");
+  script.setAttribute("data-mapping", "pathname");
+  script.setAttribute("data-strict", "0");
+  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-emit-metadata", "0");
+  script.setAttribute("data-input-position", "bottom");
+  script.setAttribute("data-theme", giscusTheme);
+  script.setAttribute("data-lang", "en");
+  script.setAttribute("crossorigin", "anonymous");
+  script.async = true;
+
+  const giscusContainer = document.createElement("div");
+  giscusContainer.id = "giscus-container";
+  document.body.appendChild(giscusContainer);
+  giscusContainer.appendChild(script);
+}
+
+function updateGiscusTheme() {
+  const iframe = document.querySelector("iframe.giscus-frame");
+  if (iframe) {
+    const theme = localStorage.getItem("mode") === "light" ? "light" : "dark";
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme } } },
+      "https://giscus.app"
+    );
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadGiscus);
+
+// Listen for changes to the mode in localStorage
+window.addEventListener("storage", (event) => {
+  if (event.key === "mode") {
+    updateGiscusTheme();
+  }
+});
+
+// Add an event listener to your theme toggle button
+const themeToggle = document.querySelector(".toggle"); // Adjust the selector as needed
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    setTimeout(updateGiscusTheme, 100); // Small delay to ensure localStorage is updated
+  });
+}
 </script>
 {{ end }}

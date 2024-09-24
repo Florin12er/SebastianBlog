@@ -1,0 +1,88 @@
+/* Navbar Styles */
+.navbar-partial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--textSoft);
+}
+
+.title {
+  margin-left: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.title:hover {
+  opacity: var(--opacity);
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  margin-right: 40px;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background: var(--bgSoft);
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  transition: all var(--animation-speed) var(--animation-curve);
+  transform-origin: center;
+}
+
+.link:hover {
+  background: var(--bgHover);
+  transform: scale(var(--grow-scale));
+}
+
+.link svg {
+  width: 30px;
+  height: 30px;
+}
+
+.toggle {
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--bgSoft);
+  padding-left: 2px;
+  padding-right: 2px;
+  gap: 5px;
+  border: 1px solid var(--textSoft);
+  position: relative;
+}
+
+.toggle svg {
+  width: 33px;
+  height: 33px;
+}
+
+.ball {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--textSoft);
+  border: 1px solid var(--bgSoft);
+}
+
+.light .ball {
+  left: unset;
+  right: 0;
+}
+

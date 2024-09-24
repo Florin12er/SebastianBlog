@@ -1,0 +1,26 @@
+:root {
+  --bg: #111827;
+  --bgSoft: #1f2937;
+  --bgHover: #374151;
+  --text: #f8fafc;
+  --textSoft: #d1d5db;
+
+  /* Layout */
+  --container-max-width: 1400px;
+  --container-padding: 50px;
+  --gap: 2rem;
+
+  /* Card */
+  --card-bg: var(--bgSoft);
+  --card-hover: var(--bgHover);
+  --border-radius: 10px;
+  --avatar-size: 40px;
+
+  /* Animation */
+  --grow-scale: 1.1;
+  --animation-speed: 0.3s;
+  --animation-curve: ease-out;
+  --opacity: 0.6;
+}
+
+

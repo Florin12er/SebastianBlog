@@ -2,9 +2,11 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 enableEmoji = true 
+paginate = 3
 
 [params]
 dateFormat = "Jan 2, 2006"
+description = "This is my personal blog"
 
 [taxonomies]
 author = "authors"

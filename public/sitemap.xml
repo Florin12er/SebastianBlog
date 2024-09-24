@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.org/me/about/</loc>
+    <lastmod>2024-09-24T18:17:36+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/me/</loc>
+    <lastmod>2024-09-24T18:17:36+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
+    <lastmod>2024-09-24T18:17:36+02:00</lastmod>
+  </url><url>
     <loc>https://example.org/authors/apetrei-florin-sebastian/</loc>
     <lastmod>2024-09-23T20:29:11+02:00</lastmod>
   </url><url>
@@ -18,9 +27,6 @@
     <lastmod>2024-09-23T20:29:11+02:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/komunikation-analyse/</loc>
-    <lastmod>2024-09-23T20:29:11+02:00</lastmod>
-  </url><url>
-    <loc>https://example.org/</loc>
     <lastmod>2024-09-23T20:29:11+02:00</lastmod>
   </url><url>
     <loc>https://example.org/my-fourth-post/</loc>

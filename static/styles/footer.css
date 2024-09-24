@@ -1,0 +1,82 @@
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-separator {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--textSoft);
+}
+
+.footer-social svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  transition: all var(--animation-speed) var(--animation-curve);
+  transform-origin: center;
+}
+
+.footer-social svg:hover {
+  opacity: var(--opacity);
+  transform: scale(var(--grow-scale));
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links a:hover {
+  opacity: var(--opacity);
+}
+
+/* Tooltip Styles */
+.footer-social a {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-social a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bgSoft);
+  color: var(--text);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+.footer-social a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-item {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.category-item:hover {
+  opacity: var(--opacity);
+}
+
