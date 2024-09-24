@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>
+{{ .Content }}
+</p>
+
+<label for="name">Your Name</label>
+<input type="text" placeholder="type your name here" id="name">
+<label for="email">Your Email</label>
+<input type="email" placeholder="type your email here" id="email">
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+<button type="submit">Submit</button>
+
+
+{{ end }}

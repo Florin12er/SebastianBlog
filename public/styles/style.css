@@ -547,6 +547,19 @@ a {
   visibility: visible;
 }
 
+/* Categories */
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.category-item {
+  color: white;
+  margin-right: 10px;
+}
+
 /* Responsive Styles */
 @media (max-width: 1536px) {
   .container {

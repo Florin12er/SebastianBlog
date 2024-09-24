@@ -8,9 +8,27 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Sep 2024 20:29:11 +0200</lastBuildDate><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>deutsch</title>
+      <link>https://example.org/categories/deutsch/</link>
+      <pubDate>Mon, 23 Sep 2024 20:29:11 +0200</pubDate>
+      
+      <guid>https://example.org/categories/deutsch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>komunikation analyse</title>
+      <link>https://example.org/categories/komunikation-analyse/</link>
+      <pubDate>Mon, 23 Sep 2024 20:29:11 +0200</pubDate>
+      
+      <guid>https://example.org/categories/komunikation-analyse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>test</title>
       <link>https://example.org/categories/test/</link>
-      <pubDate>Mon, 23 Sep 2024 20:29:11 +0200</pubDate>
+      <pubDate>Mon, 23 Sep 2024 11:27:30 +0200</pubDate>
       
       <guid>https://example.org/categories/test/</guid>
       <description></description>
@@ -19,7 +37,7 @@
     <item>
       <title>webdev</title>
       <link>https://example.org/categories/webdev/</link>
-      <pubDate>Mon, 23 Sep 2024 20:29:11 +0200</pubDate>
+      <pubDate>Mon, 23 Sep 2024 11:27:30 +0200</pubDate>
       
       <guid>https://example.org/categories/webdev/</guid>
       <description></description>

@@ -140,6 +140,7 @@ a {
 }
 
 .list-item {
+  width: 400px;
   background-color: var(--card-bg);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -547,6 +548,28 @@ a {
   visibility: visible;
 }
 
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-item {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.category-item:hover {
+  opacity: var(--opacity);
+}
+.giscus {
+  max-width: 100%;
+}
+.giscus-frame {
+  max-width: 100%;
+}
+
 /* Responsive Styles */
 @media (max-width: 1536px) {
   .container {
@@ -564,6 +587,7 @@ a {
   .container {
     max-width: 1024px;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -572,6 +596,10 @@ a {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .list-item {
+    width: 500px;
+  }
+
 
   .left-bar {
     display: none;

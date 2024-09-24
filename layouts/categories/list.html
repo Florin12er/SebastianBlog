@@ -1,14 +1,35 @@
 {{ define "main" }}
 
 {{ if eq .RelPermalink "/categories/" }}
-{{ range $.Site.Taxonomies.categories.ByCount }}
-<a href="/categories/{{ .Name }}" class="category-name">
-   {{ .Name }}
-</a>
-<small>
-({{ .Count }})
-</small>
+<div class="category-list">
+  {{ range $.Site.Taxonomies.categories.ByCount }}
+    <a href="/categories/{{ .Name }}" class="category-item">
+      {{ .Name }} ({{ .Count }})
+    </a>
   {{ end }}
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const colors = [
+        "#10b981", "#ef4444", "#eab308", "#d946ef", "#f43f5e", "#65a30d",
+        "#06b6d4", "#ec4899", "#14b8a6", "#f97316", "#84cc16",
+        "#22c55e", "#3b82f6", "#f59e0b", "#64748b", "#0ea5e9", "#dc2626"
+    ];
+    
+    const categoryItems = document.querySelectorAll(".category-item");
+    const shuffledColors = colors.sort(() => 0.5 - Math.random());
+    
+    categoryItems.forEach((item, index) => {
+        if (index < shuffledColors.length) {
+            item.style.backgroundColor = shuffledColors[index];
+        } else {
+            // If we run out of unique colors, generate a random one
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            item.style.backgroundColor = "#" + randomColor;
+        }
+    });
+});
+</script>
 {{ else }}
 <div class="list-container">
     {{ range .Paginator.Pages }}

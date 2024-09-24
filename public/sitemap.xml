@@ -11,19 +11,25 @@
     <loc>https://example.org/categories/</loc>
     <lastmod>2024-09-23T20:29:11+02:00</lastmod>
   </url><url>
+    <loc>https://example.org/categories/deutsch/</loc>
+    <lastmod>2024-09-23T20:29:11+02:00</lastmod>
+  </url><url>
     <loc>https://example.org/my-fifth-post/</loc>
+    <lastmod>2024-09-23T20:29:11+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/komunikation-analyse/</loc>
     <lastmod>2024-09-23T20:29:11+02:00</lastmod>
   </url><url>
     <loc>https://example.org/</loc>
     <lastmod>2024-09-23T20:29:11+02:00</lastmod>
   </url><url>
+    <loc>https://example.org/my-fourth-post/</loc>
+    <lastmod>2024-09-23T11:27:30+02:00</lastmod>
+  </url><url>
     <loc>https://example.org/categories/test/</loc>
-    <lastmod>2024-09-23T20:29:11+02:00</lastmod>
+    <lastmod>2024-09-23T11:27:30+02:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/webdev/</loc>
-    <lastmod>2024-09-23T20:29:11+02:00</lastmod>
-  </url><url>
-    <loc>https://example.org/my-fourth-post/</loc>
     <lastmod>2024-09-23T11:27:30+02:00</lastmod>
   </url><url>
     <loc>https://example.org/my-third-post/</loc>
