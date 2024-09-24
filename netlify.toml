@@ -1,0 +1,4 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+  [[plugins.inputs]]
+  command = "cd SebastianBlog" # Adjust to the correct directory if needed
